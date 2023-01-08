@@ -1,0 +1,433 @@
+body {
+    margin: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#tabla {
+    display: grid;
+    grid-template-columns: repeat(19, 100px);
+    grid-template-rows: repeat(10, 100px);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.elemento {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: "a b"
+                         "c c"
+                         "d d"
+    ;
+}
+
+.n-at {
+    grid-area: a;
+    margin: 5px;
+    font-size: small;
+}
+
+.masa-at {
+    grid-area: b;   
+    text-align: end;
+    margin: 5px;
+    font-size: small;
+}
+
+.simbolo {
+    grid-area: c;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;    
+}
+
+.nombre {
+    grid-area: d;
+    margin: 5px;
+    text-align: center;
+    font-size: small;
+}
+
+.periodo {
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.grupo {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.no-metal {
+    background-color: rgb(245,128,33);
+}
+
+.metal-alcalino {
+    background-color: gray;
+}
+
+.alcalinoterreos {
+    background-color: rgb(253,186,18);
+}
+
+.transicion {
+    background-color: rgb(0,136,206);
+}
+
+.otros-metales {
+    background-color: rgb(120,30,119);
+}
+
+.metaloides {
+    background-color: rgb(237,25,68);
+}
+
+.halogenos {
+    background-color: rgb(162,180,39);
+}
+
+.gases-nobles {
+    background-color: rgb(0,106,54);
+}
+
+.lantanidos {
+    background-color: rgb(203,212,142);
+}
+
+.actinidos {
+    background-color: rgb(103,164,132);
+}
+
+.oxigeno {
+    width: 200px;
+    height: 200px;
+}
+
+.n-at-ox {
+    grid-area: a;
+    margin: 5px;
+    font-size: x-large;
+}
+
+.masa-at-ox {
+    grid-area: b;   
+    text-align: end;
+    margin: 5px;
+    font-size: x-large;
+}
+
+.simbolo-ox {
+    grid-area: c;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;    
+}
+
+.nombre-ox {
+    grid-area: d;
+    margin: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#nombre {
+    margin-top: 55px;  
+}
+
+.n-atom {
+    display: grid;
+    grid-template-columns: 70px 100px;
+    grid-template-rows: 100px;
+}
+
+#linea1 {    
+    width: 43px;
+    height: 0px;
+    border: 1px solid black;
+    z-index: 1;
+    margin-top: -30px;
+}
+
+#n-atom {
+    margin-top: -50px;
+}
+
+.m-atom {
+    display: grid;
+    grid-template-columns: 30px 100px;
+    grid-template-rows: 100px;
+}
+
+#linea2 {    
+    width: 43px;
+    height: 0px;
+    border: 1px solid black;
+    z-index: 1;
+    margin-top: -30px;
+    margin-left: -22px;
+}
+
+#masa {
+    margin-top: -50px;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 30px 100px;
+    grid-template-rows: 100px;
+}
+
+#linea3 {    
+    width: 85px;
+    height: 0px;
+    border: 1px solid black;
+    z-index: 1;
+    margin-top: 15px;
+    margin-left: -65px;
+}
+
+#nombre {
+    margin-top: 5px;
+}
+
+.symbol {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px;
+}
+
+#linea4 {    
+    width: 85px;
+    height: 0px;
+    border: 1px solid black;
+    z-index: 1;
+    margin-top: -60px;
+    margin-left: -30px;
+}
+
+#simbolo {
+    margin-top: -75px;
+}
+
+
+.lista {
+        display: grid;
+        grid-template-columns: 100px;
+}
+
+.g-n {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-template-rows: 35px;
+}
+
+.color-g-nobles {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0,106,54);
+    margin-left: 50px;
+}
+
+.g-nobles {
+    width: 200px;
+    margin-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.halogen {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-template-rows: 35px;
+}
+ 
+.color-halo {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(162,180,39);
+    margin-left: 50px;
+}
+
+.halo {
+    width: 200px;
+    margin-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nonmetals {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-template-rows: 35px;
+}
+ 
+.color-nonmetals {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(245,128,33);
+    margin-left: 50px;
+}
+
+.nonmet {
+    width: 200px;
+    margin-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.metalloids {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-template-rows: 35px;
+}
+ 
+.color-metalloids {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(237,25,68);
+    margin-left: 50px;
+}
+
+.metalloid {
+    width: 200px;
+    margin-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-metals {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-template-rows: 35px;
+}
+ 
+.color-other-metals {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(120,30,119);
+    margin-left: 50px;
+}
+
+.othermetals {
+    width: 200px;
+    margin-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.met-trans {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-template-rows: 35px;
+}
+ 
+.color-met-trans {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0,136,206);
+    margin-left: 50px;
+}
+
+.mettrans {
+    width: 200px;
+    margin-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.alcalin {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-template-rows: 35px;
+}
+ 
+.color-alcalin {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(253,186,18);
+    margin-left: 50px;
+}
+
+.alcalinot {
+    width: 200px;
+    margin-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.met-alcalin {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-template-rows: 35px;
+}
+ 
+.color-met-alcalin {
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    margin-left: 50px;
+}
+
+.metalcalin {
+    width: 200px;
+    margin-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lantans {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-template-rows: 35px;
+}
+ 
+.color-lantans {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(203,212,142);
+    margin-left: 50px;
+}
+
+.lantan {
+    width: 200px;
+    margin-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.actins {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-template-rows: 35px;
+}
+ 
+.color-actins {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(103,164,132);
+    margin-left: 50px;
+}
+
+.actinis {
+    width: 200px;
+    margin-left: 75px;
+    justify-content: center;
+    align-items: center;
+}
