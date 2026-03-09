@@ -26,7 +26,7 @@ El objetivo de este proyecto fue recrear la estructura técnica de la tabla peri
 
 1.  Clona este repositorio:
     ```bash
-    git clone [https://github.com/tu-usuario/Tabla-Periodica.git](https://github.com/tu-usuario/Tabla-Periodica.git)
+    git clone [https://github.com/SraMacbeth/Tabla-Periodica.git](https://github.com/tu-usuario/Tabla-Periodica.git)
     ```
 2.  Abre el archivo `index.html` en cualquier navegador moderno.
 
